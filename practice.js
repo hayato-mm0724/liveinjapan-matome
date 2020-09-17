@@ -15,7 +15,7 @@
     });
   });
 
-  const pics_srcs = ["img/pic1.jpg", "img/pic2.jpg", "img/pic3.jpg"];
+  const pics_srcs = ["pic1.jpg", "pic2.jpg", "pic3.jpg"];
   let num = -1;
 
   function slideshow_timer(){
