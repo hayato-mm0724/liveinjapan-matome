@@ -1,0 +1,41 @@
+.contact-form {
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+form {
+  text-align: center;
+}
+
+.form-group {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-send {
+  padding: 20px 50px;
+  margin: 20px 0px 50px 0px;
+  font-size: 18px;
+  background-color: transparent;
+  font-weight: bold;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.72);
+  border: 2px solid rgba(0, 0, 0, 0.72);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.72);
+}
+.form-send:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.72);
+}
+.form-send:active {
+  position: relative;
+  top: 3px;
+  box-shadow: none;
+}
