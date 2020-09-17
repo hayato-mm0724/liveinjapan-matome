@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ来日情報まとめ</title>
+  <link rel="stylesheet" href="practice.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header id="contact">
+    <div>
+      <div class="left">DJ Live in Japan</div>
+      <nav class="right">
+        <ul>
+          <li><a href="index.html" class="btn btn-2">TOP</a></li>
+          <li><a href="index.html#information" class="btn btn-2">INFORMATION</a></li>
+          <li><a href="#contact" class="btn btn-2">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="contact-form">
+    <h1>Contact</h1>
+    <h2>イベントディスカウント情報、問い合わせお気軽に下さい。</h2>
+    <form action="hayato.mm0724@gmail.com" method="post">
+      <div class="form-group">
+        <p>イベント名</p>
+        <select class="event" name="event" required>
+          <option>10/9 FRI one's@池袋</option>
+          <option>10/31 SAT ever@青山</option>
+          <option>その他(お問い合わせの場合はこちらをお選び下さい)</option>
+        </select>
+        <div class="form-group">
+          <p>お名前</p>
+          <input placeholder="タナカタロウ" class="name" name="user-name" size="40" required>
+        </div>
+        <div class="form-group">
+          <p>メールアドレス</p>
+          <input type="e-mail" placeholder="ex:xxx@ooo.co.jp" class="mail" name="eser-email" size="50" required>
+        </div>
+        <div class="form-group">
+          <p>お問い合わせ内容<br>(ディスカウント複数いる場合は、カタカナフルネームでこちらにご記入下さい)</p>
+          <textarea rows="8" cols="80" placeholder="ex:タナカタロウ ヤマダハナコ" class="guestname"></textarea>
+        </div>
+        <input type="submit" value="submit" class="form-send">
+      </div>
+    </form>
+  </div>
+  <div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12921.916725186698!2d139.69310652279376!3d35.65989575806354!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2d4eaa1743c4670!2z5riL6LC344K544Kv44Op44Oz44OW44Or5Lqk5beu54K5!5e0!3m2!1sja!2sjp!4v1599796905501!5m2!1sja!2sjp" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  <footer>
+    <div>
+      <div class="left">DJ Live in Japan</div>
+      <nav class="right">
+        <ul id="footer">
+          <li><a href="#top" id="color">TOP</a></li>
+          <li><a href="#about" id="color">ABOUT</a></li>
+          <li><a href="#information" id="color">INFORMATION</a></li>
+          <li><a href="#" id="color">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
