@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main, .schedule {
+  background-color: rgba(219, 219, 219, 0.2);
+}
+
+html {
+  widows: 100%;
+  font-family: "comic sans ms";
+  color: rgba(0, 0, 0, 0.72);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  /* position: fixed; */
+  /* box-shadow: 0 1px 4px rgba(133, 104, 89, 0.4); */
+}
+
+header > div {
+  display: flex;
+}
+
+.right > ul {
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+.right {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.left {
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* headerアニメーション */
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900); */
+* {
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.btn-2 {
+  letter-spacing: 0;
+}
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+}
+.btn-2:after,
+.btn-2:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.btn-2:hover:after,
+.btn-2:hover:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-color: rgba(0, 0, 0, 0.72);
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+/* photo */
+.photo {
+  text-align: center;
+}
+
+.photo > img {
+  width: 45vw;
+  height: 350px;
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+
+/* about */
+.about {
+  padding-top: 150px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.about > p {
+  font-size: 30px;
+}
+
+.about > img {
+  width: 35vw;
+}
+
+/* information */
+.main {
+  padding-bottom: 150px;
+}
+
+h1 {
+  padding-top: 30px;
+  margin-left: 90px;
+}
+
+.container > h2 {
+  margin-left: 100px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+/* main imgアニメーション */
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 25vw;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0px 3px 6px #554338;
+}
+
+.grid figure img {
+	position: relative;
+	display: inline-block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 21px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/* .grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+} */
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+/* .grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+} */
+
+/*---------------*/
+/***** Zoe *****/
+/*---------------*/
+
+figure.effect-zoe figcaption {
+	top: auto;
+	bottom: 0;
+	padding: 1em;
+	height: 3.75em;
+	background: rgba(0, 0, 0, 0.72);
+	color:  white;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-zoe h2 {
+	float: left;
+}
+
+figure.effect-zoe p.icon-links a {
+	float: right;
+	color: white;
+	font-size: 1.4em;
+}
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+  opacity: 0.6;
+}
+
+figure.effect-zoe p.description {
+	position: absolute;
+	bottom: 5em;
+	padding: 2em;
+	color: white;
+	text-transform: none;
+	font-size: 70%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+}
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+/* 
+figure.effect-zoe p.icon-links a span::before {
+	display: inline-block;
+	padding: 8px 10px;
+	font-family: 'feathericons';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+} */
+
+.icon-eye::before {
+	content: '\e000';
+}
+
+.icon-paper-clip::before {
+	content: '\e001';
+}
+
+.icon-heart::before {
+	content: '\e024';
+}
+
+figure.effect-zoe h2 {
+	display: inline-block;
+}
+
+figure.effect-zoe:hover p.description {
+	opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h2 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+/* figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+} */
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+/* My schedule */
+.schedule {
+  padding-bottom: 100px;
+}
+
+.schedule-list {
+  margin-top: 50px;
+  margin-left: 200px;
+  font-size: 30px;
+}
+
+.details {
+  display: none;
+}
+
+/* profile */
+.member {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-pic > img {
+  width: 15vw;
+  margin-left: 150px;
+}
+
+.profile {
+  display: flex;
+}
+
+.sentence {
+  float: left;
+  font-size: 19px;
+  padding-top: 20px;
+}
+
+.hayato {
+  float: left;
+  width: 13vw;
+  border-radius: 50px;
+}
+
+.fab {
+  margin-left: 15px;
+}
+
+.fa-twitter-square {
+  color: #1DA1F2;
+}
+
+.fa-instagram {
+  color: white;
+  background: linear-gradient(to right, #5478f2 0%, #f23f79 60%, orange 100%);
+}
+
+.fa-soundcloud {
+  color: #ff7700;
+}
+
+/* contact */
+.contact {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.contact-btn {
+  margin: 0 auto;
+  padding: 20px 100px;
+  width: 100px;
+  display: block;
+  font-size: 18px;
+  background-color: transparent;
+  font-weight: bold;
+  overflow: hidden;
+  /* border: none; */
+  outline: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.72);
+  border: 2px solid rgba(0, 0, 0, 0.72);
+  position: relative;
+}
+/* contact アニメーション */
+.contact-btn::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.72); /* 背景色 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: transform 0.2s;
+  transform: translate(-100%);
+}
+.contact-btn:hover {
+  color: white;
+}
+.contact-btn:hover::after {
+  transform: translate(0);
+}
+.contact-btn:active, .contact-btn:focus {
+  top: 2px;
+}
+
+/* footer */
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  line-height: 100px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.83);
+  /* background: #515254; */
+}
+
+footer > div {
+  display: flex;
+}
+
+#color {
+  color: white;
+}
